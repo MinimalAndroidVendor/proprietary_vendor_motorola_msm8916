@@ -23,20 +23,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/surnia/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/surnia/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/surnia/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/surnia/proprietary//etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat:system//etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat \
-    vendor/motorola/surnia/proprietary//etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat:system//etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat \
+    vendor/motorola/surnia/proprietary/etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat:system/etc/firmware/synaptics-boe-s2316b-15031101-175833-surnia.tdat \
+    vendor/motorola/surnia/proprietary/etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat:system/etc/firmware/synaptics-inx-s2316i-15031102-175833-surnia.tdat \
     vendor/motorola/surnia/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/surnia/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/surnia/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
+    vendor/motorola/surnia/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
+    vendor/motorola/surnia/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/surnia/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/motorola/surnia/proprietary/lib/libmmcamera_lux_standardization.so:system/lib/libmmcamera_lux_standardization.so \
     vendor/motorola/surnia/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/motorola/surnia/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/surnia/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/surnia/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz.so:system/vendor/lib/libactuator_rohm_bu64245gwz.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz_camcorder.so:system/vendor/lib/libactuator_rohm_bu64245gwz_camcorder.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz_camera.so:system/vendor/lib/libactuator_rohm_bu64245gwz_camera.so \
-    vendor/motorola/surnia/proprietary/vendor/lib/libactuator_rohm_bu64245gwz.so:system/vendor/lib/libactuator_rohm_bu64245gwz.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libchromatix_s5k5e2_common.so:system/vendor/lib/libchromatix_s5k5e2_common.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libchromatix_s5k5e2_default_video.so:system/vendor/lib/libchromatix_s5k5e2_default_video.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libchromatix_s5k5e2_hfr_60fps.so:system/vendor/lib/libchromatix_s5k5e2_hfr_60fps.so \
@@ -45,13 +50,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/surnia/proprietary/vendor/lib/libchromatix_s5k5e2_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_snapshot.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
@@ -68,7 +74,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/motorola/surnia/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/motorola/surnia/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/motorola/surnia/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+
+PRODUCT_PACKAGES += \
+    libHevcSwDecoder

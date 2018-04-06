@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/harpia/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
     vendor/motorola/harpia/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/harpia/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
-    vendor/motorola/harpia/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
+    vendor/motorola/harpia/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/motorola/harpia/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/harpia/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/motorola/harpia/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
@@ -39,6 +39,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/harpia/proprietary/lib/libmotocalibration.so:system/lib/libmotocalibration.so \
     vendor/motorola/harpia/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/motorola/harpia/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libactuator_f8v03t_dw9718s.so:system/vendor/lib/libactuator_f8v03t_dw9718s.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libactuator_f8v03t_dw9718s_camcorder.so:system/vendor/lib/libactuator_f8v03t_dw9718s_camcorder.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libactuator_f8v03t_dw9718s_camera.so:system/vendor/lib/libactuator_f8v03t_dw9718s_camera.so \
@@ -84,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/harpia/proprietary/vendor/lib/libchromatix_ov8865_l8865aa0_zsl.so:system/vendor/lib/libchromatix_ov8865_l8865aa0_zsl.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
@@ -109,7 +115,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/motorola/harpia/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/motorola/harpia/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/motorola/harpia/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+
+PRODUCT_PACKAGES += \
+    libHevcSwDecoder

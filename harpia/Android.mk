@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),surnia)
+ifeq ($(TARGET_DEVICE),harpia)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libHevcSwDecoder
